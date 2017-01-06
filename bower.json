@@ -4,6 +4,7 @@
   "authors": [
     "Anand Aravindan <anand.anand84@gmail.com>"
   ],
+  "version" : "0.0.1",
   "description": "A polymer custom component to configure your app with shortcuts",
   "main": "shortcuts.html",
   "moduleType": [],
