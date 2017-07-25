@@ -14,50 +14,53 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../paper-dialog-scrollable/paper-dialog-scrollable.html">
 
-<link rel="import" href="../iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="../iron-flex-layout/iron-flex-layout-classes.html">
 
 <link rel="import" href="../paper-material/paper-material.html">
 
 <link rel="import" href="../paper-toast/paper-toast.html">
 
 <dom-module id="shortcut-help">
-    <style>
-        .header {
-            text-transform: capitalize;
-            color: black;
-            margin: 5px;
-        }
-
-        .type {
-            width: 150px;
-            color: black;
-        }
-
-        paper-material {
-            padding: 15px;
-            margin: 5px;
-        }
-
-        .shortcut {
-            margin-bottom: 5px;
-        }
-
-        .cagegory {
-            margin: 20px;
-            max-width: 300px;
-        }
-
-        paper-dialog {
-            width: 80%;
-            max-width:500px;
-        }
-
-        h2{
-            margin-bottom: 20px;
-        }
-
-    </style>
     <template>
+        <style is="custom-style" include="iron-flex iron-flex-alignment">
+            .header {
+                text-transform: capitalize;
+                color: black;
+                margin: 5px;
+            }
+
+            .type {
+                width: 150px;
+                color: black;
+            }
+
+            paper-material {
+                padding: 15px;
+                margin: 5px;
+            }
+
+            .shortcut {
+                margin-bottom: 5px;
+            }
+
+            .cagegory {
+                margin: 20px;
+                max-width: 300px;
+            }
+
+            paper-dialog {
+                width: 80%;
+                max-width:500px;
+            }
+
+            h2{
+                margin-bottom: 20px;
+            }
+
+            paper-toast {
+                z-index : var(--toast-z-index, 1200)
+            }
+        </style>
         <paper-toast id="toast1" duration="3000" text="To see list of available shortcuts. ?"></paper-toast>
         <paper-dialog id="dialog" with-backdrop>
             <paper-dialog-scrollable>
